@@ -29,7 +29,7 @@ function App() {
   };
 
   const skills = [
-    "AWS (S3, EC2, RDS, IAM, Lex)",
+    "AWS",
     "PowerBI",
     "Microsoft SQL Server",
     "Python",
@@ -44,8 +44,7 @@ function App() {
     "Windows/Linux Administration",
     "API Testing",
     "Zendesk",
-    "CyberArk",
-    "Inglés (Nivel B2)",
+    "Inglés B2",
   ];
 
   const experiences: ExperienceType[] = [
@@ -98,7 +97,7 @@ function App() {
       position: "Cyber Security Analyst",
       period: "Enero 2021 - Diciembre 2021",
       description:
-        "Desarrollé scripts en JavaScript y Python para automatizar tareas de seguridad y análisis de vulnerabilidades. Brindé soporte técnico a ususarios internos dentro de la empresa",
+        "Desarrollé scripts en JavaScript y Python para automatizar tareas de seguridad y análisis de vulnerabilidades. Brindé soporte técnico a usuarios internos dentro de la empresa",
       technologies: ["JavaScript", "Python", "CyberArk"],
     },
   ];
@@ -170,6 +169,7 @@ function App() {
         about={personalInfo.about}
         skills={skills}
         cvOnline={personalInfo.cvOnline}
+        location={personalInfo.location}
       />
       <Experience experiences={experiences} />
       <EducationComponent
@@ -178,7 +178,6 @@ function App() {
         courses={courses}
       />
       <Contact
-        location={personalInfo.location}
         phone={personalInfo.phone}
         email={personalInfo.email}
         linkedin={personalInfo.linkedin}

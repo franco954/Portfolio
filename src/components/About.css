@@ -52,6 +52,28 @@
   margin-bottom: 2rem;
 }
 
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background: var(--bg-card);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: fit-content;
+}
+
+.location-icon {
+  font-size: 1.2rem;
+}
+
+.location-text {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 .skills h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;

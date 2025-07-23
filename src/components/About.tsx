@@ -5,9 +5,10 @@ interface AboutProps {
   about: string;
   skills: string[];
   cvOnline?: string;
+  location: string;
 }
 
-const About: React.FC<AboutProps> = ({ about, skills, cvOnline }) => {
+const About: React.FC<AboutProps> = ({ about, skills, cvOnline, location }) => {
   const handleDownloadCV = () => {
     if (cvOnline) {
       window.open(cvOnline, "_blank");
@@ -21,6 +22,10 @@ const About: React.FC<AboutProps> = ({ about, skills, cvOnline }) => {
         <div className="about-content">
           <div className="about-text">
             <p>{about}</p>
+            <div className="location-info">
+              <span className="location-icon">📍</span>
+              <span className="location-text">{location}</span>
+            </div>
           </div>
           <div className="skills">
             <h3>Tecnologías</h3>
