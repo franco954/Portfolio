@@ -64,7 +64,9 @@ const EducationComponent: React.FC<EducationProps> = ({
                   {cert.important && (
                     <div className="featured-badge">Destacada</div>
                   )}
-                  <h4 className="cert-name">{cert.name}</h4>
+                  <div className="cert-header">
+                    <h4 className="cert-name">{cert.name}</h4>
+                  </div>
                   <p className="cert-issuer">{cert.issuer}</p>
                   <p className="cert-date">{cert.date}</p>
                   {cert.url && (
