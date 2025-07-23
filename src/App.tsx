@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import EducationComponent from "./components/Education";
-import Contact from "./components/ContactNew";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import type {
   Experience as ExperienceType,
@@ -24,7 +24,8 @@ function App() {
     github: "https://github.com/franco954",
     cvOnline: "https://franconunezresume.netlify.app/",
     profileImage: "/images/profile.jpg",
-    about: "Analista de Infraestructura y Desarrollador especializado en soluciones cloud con más de 4 años de experiencia en el sector tecnológico. Experto en AWS, Azure DevOps, PowerBI y desarrollo fullstack. Actualmente cursando Analista Programador en UAI y certificado AWS Cloud Practitioner. Nivel B2 de inglés con capacidad para trabajar en entornos internacionales. Apasionado por la automatización, análisis de datos y creación de soluciones eficientes que impulsen el crecimiento empresarial.",
+    about:
+      "Analista de Infraestructura y Desarrollador especializado en soluciones cloud con más de 4 años de experiencia en el sector tecnológico. Experto en AWS, Azure DevOps, PowerBI y desarrollo fullstack. Actualmente cursando Analista Programador en UAI y certificado AWS Cloud Practitioner. Nivel B2 de inglés con capacidad para trabajar en entornos internacionales. Apasionado por la automatización, análisis de datos y creación de soluciones eficientes que impulsen el crecimiento empresarial.",
   };
 
   const skills = [
