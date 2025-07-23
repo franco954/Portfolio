@@ -63,9 +63,22 @@ const Contact: React.FC<ContactProps> = ({
           <a href={`mailto:${email}`} className="contact-card">
             <div className="contact-icon email">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="#EA4335"/>
-                <path d="M22 6l-10 7L2 6" stroke="#FBBC04" strokeWidth="1.5" fill="none"/>
-                <path d="M2 6v12h20V6l-10 7-10-7z" fill="none" stroke="#34A853" strokeWidth="0.5"/>
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  fill="#EA4335"
+                />
+                <path
+                  d="M22 6l-10 7L2 6"
+                  stroke="#FBBC04"
+                  strokeWidth="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M2 6v12h20V6l-10 7-10-7z"
+                  fill="none"
+                  stroke="#34A853"
+                  strokeWidth="0.5"
+                />
               </svg>
             </div>
             <div className="contact-details">
