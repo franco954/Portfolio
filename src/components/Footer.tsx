@@ -9,13 +9,7 @@ interface FooterProps {
   cvOnline: string;
 }
 
-const Footer: React.FC<FooterProps> = ({
-  name,
-  email,
-  linkedin,
-  github,
-  cvOnline,
-}) => {
+const Footer: React.FC<FooterProps> = ({ name, email, cvOnline }) => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -24,9 +18,7 @@ const Footer: React.FC<FooterProps> = ({
         <div className="footer-content">
           <div className="footer-section">
             <h3 className="footer-title">{name}</h3>
-            <p className="footer-subtitle">
-              Infrastructure Analyst & Cloud Solutions Developer
-            </p>
+            <p className="footer-subtitle">DevOps Engineer</p>
           </div>
 
           <div className="footer-section">
@@ -59,30 +51,6 @@ const Footer: React.FC<FooterProps> = ({
                 CV Online
               </a>
             </p>
-          </div>
-
-          <div className="footer-section">
-            <h4 className="footer-heading">Sígueme</h4>
-            <div className="social-links">
-              <a
-                href={linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-                title="LinkedIn"
-              >
-                <span className="icon">💼</span>
-              </a>
-              <a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-                title="GitHub"
-              >
-                <span className="icon">🐱</span>
-              </a>
-            </div>
           </div>
         </div>
 

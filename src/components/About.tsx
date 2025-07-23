@@ -23,7 +23,7 @@ const About: React.FC<AboutProps> = ({ about, skills, cvOnline }) => {
             <p>{about}</p>
           </div>
           <div className="skills">
-            <h3>Tecnologías que manejo</h3>
+            <h3>Tecnologías</h3>
             <div className="skills-grid">
               {skills.map((skill, index) => (
                 <span key={index} className="skill-tag">

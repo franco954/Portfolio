@@ -16,7 +16,7 @@ function App() {
   // Información personal actualizada basada en CV
   const personalInfo = {
     name: "Franco Alejandro Núñez",
-    title: "Infrastructure Analyst & Cloud Solutions Developer",
+    title: "DevOps Engineer",
     location: "Buenos Aires, Argentina",
     phone: "+54 11 2878-0357",
     email: "nunezfrancoalejandro1@gmail.com",
@@ -25,7 +25,7 @@ function App() {
     cvOnline: "https://franconunezresume.netlify.app/",
     profileImage: "/images/profile.jpg",
     about:
-      "Analista de Infraestructura y Desarrollador especializado en soluciones cloud con más de 4 años de experiencia en el sector tecnológico. Experto en AWS, Azure DevOps, PowerBI y desarrollo fullstack. Actualmente cursando Analista Programador en UAI y certificado AWS Cloud Practitioner. Nivel B2 de inglés con capacidad para trabajar en entornos internacionales. Apasionado por la automatización, análisis de datos y creación de soluciones eficientes que impulsen el crecimiento empresarial.",
+      "DevOps Engineer con más de 4 años de experiencia construyendo soluciones tecnológicas end-to-end. Especializado en el desarrollo de aplicaciones web con el stack MERN y la implementación de infraestructura cloud en AWS. Experiencia en la creación de pipelines CI/CD, automatización de procesos y gestión de sistemas tanto en desarrollo como en producción. Actualmente cursando Analista Programador en UAI y certificado AWS Cloud Practitioner. Nivel B2 de inglés con capacidad para trabajar en entornos internacionales.",
   };
 
   const skills = [

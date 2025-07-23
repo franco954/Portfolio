@@ -20,7 +20,10 @@ const Contact: React.FC<ContactProps> = ({
     <section id="contact" className="contact">
       <div className="container">
         <h2 className="section-title">Contacto</h2>
-        <p className="section-subtitle">Construyamos algo increíble juntos</p>
+        <p className="section-subtitle">
+          Ponte en contacto conmigo a través de cualquiera de los siguientes
+          medios:
+        </p>
 
         <div className="contact-info-grid">
           <a href={`tel:${phone}`} className="contact-card">
@@ -32,26 +35,6 @@ const Contact: React.FC<ContactProps> = ({
               <p>{phone}</p>
             </div>
           </a>
-
-          <a href={`mailto:${email}`} className="contact-card">
-            <div className="contact-icon email">
-              <span>✉️</span>
-            </div>
-            <div className="contact-details">
-              <h3>Email</h3>
-              <p>{email}</p>
-            </div>
-          </a>
-
-          <div className="contact-card">
-            <div className="contact-icon location">
-              <span>📍</span>
-            </div>
-            <div className="contact-details">
-              <h3>Ubicación</h3>
-              <p>{location}</p>
-            </div>
-          </div>
 
           {linkedin && (
             <a
@@ -77,6 +60,16 @@ const Contact: React.FC<ContactProps> = ({
             </a>
           )}
 
+          <a href={`mailto:${email}`} className="contact-card">
+            <div className="contact-icon email">
+              <span>✉️</span>
+            </div>
+            <div className="contact-details">
+              <h3>Email</h3>
+              <p>{email}</p>
+            </div>
+          </a>
+
           {github && (
             <a
               href={github}
@@ -100,6 +93,16 @@ const Contact: React.FC<ContactProps> = ({
               </div>
             </a>
           )}
+
+          <div className="contact-card">
+            <div className="contact-icon location">
+              <span>📍</span>
+            </div>
+            <div className="contact-details">
+              <h3>Ubicación</h3>
+              <p>{location}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
