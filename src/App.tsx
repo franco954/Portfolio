@@ -53,7 +53,7 @@ function App() {
       company: "AVALITH | Santillana client",
       position: "DevOps Engineer",
       period: "Diciembre 2025 - Actualidad",
-      current: true,
+      current: false,
       description:
         "Trabajo sobre infraestructura cloud en AWS para cuentas de clientes internacionales de Santillana, gestionando servicios como IAM, S3, EC2, CloudFront, ECS, EKS y RDS. Resuelvo tickets de infraestructura garantizando la continuidad operativa de los entornos productivos. Ejecuto ventanas de mantenimiento nocturno (3am–7am) que incluyen despliegues, actualizaciones y resolución de incidentes en tiempo real. Genero reportes diarios de estado para los clientes sobre las actividades y cambios realizados durante la guardia.",
       technologies: [
