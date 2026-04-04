@@ -25,7 +25,7 @@ function App() {
     cvOnline: "https://franconunezresume.netlify.app/",
     profileImage: "/images/profile.jpg",
     about:
-      "DevOps Engineer con más de 4 años de experiencia construyendo soluciones tecnológicas end-to-end. Especializado en el desarrollo de aplicaciones web con el stack MERN y la implementación de infraestructura cloud en AWS. Experiencia en la creación de pipelines CI/CD, automatización de procesos y gestión de sistemas tanto en desarrollo como en producción. Actualmente cursando Analista Programador en UAI y certificado AWS Cloud Practitioner. Nivel B2 de inglés con capacidad para trabajar en entornos internacionales.",
+      "DevOps Engineer con más de 5 años de experiencia construyendo soluciones tecnológicas end-to-end. Especializado en el desarrollo de aplicaciones web con el stack MERN y la implementación de infraestructura cloud en AWS. Experiencia en la creación de pipelines CI/CD, automatización de procesos y gestión de sistemas tanto en desarrollo como en producción. Actualmente cursando Analista Programador en UAI y certificado AWS Cloud Practitioner. Nivel B2 de inglés con capacidad para trabajar en entornos internacionales.",
   };
 
   const skills = [
@@ -50,6 +50,36 @@ function App() {
   const experiences: ExperienceType[] = [
     {
       id: "1",
+      company: "AVALITH | Santillana client",
+      position: "DevOps Engineer",
+      period: "Diciembre 2025 - Actualidad",
+      current: true,
+      description:
+        "Trabajo sobre infraestructura cloud en AWS para cuentas de clientes internacionales de Santillana, gestionando servicios como IAM, S3, EC2, CloudFront, ECS, EKS y RDS. Resuelvo tickets de infraestructura garantizando la continuidad operativa de los entornos productivos. Ejecuto ventanas de mantenimiento nocturno (3am–7am) que incluyen despliegues, actualizaciones y resolución de incidentes en tiempo real. Genero reportes diarios de estado para los clientes sobre las actividades y cambios realizados durante la guardia.",
+      technologies: [
+        "AWS: ECS, EKS, CloudFormation, S3, EC2, Lambda",
+        "Bitbucket",
+        "API Testing",
+      ],
+    },
+    {
+      id: "2",
+      company: "IDECBA",
+      position: "Fullstack developer",
+      period: "Mayo 2025 - Dic 2025",
+      current: false,
+      description:
+        "Desarrollo y cierre de sitios web con stack MERN. Gestión de pipelines CI/CD y automatización de procesos de despliegue.",
+      technologies: [
+        "React",
+        "JavaScript",
+        "Node",
+        "PostgreSQL",
+        "Microsoft SQL Server",
+      ],
+    },
+    {
+      id: "3",
       company: "CFOTECH | Red Link Client",
       position: "Infrastructure Analyst",
       period: "Octubre 2023 - Mayo 2025",
@@ -65,7 +95,7 @@ function App() {
       ],
     },
     {
-      id: "2",
+      id: "4",
       company: "Sisorg",
       position: "DevOps Engineer",
       period: "Enero 2023 - Octubre 2023",
@@ -74,7 +104,7 @@ function App() {
       technologies: ["AWS", "CI/CD", "Azure DevOps", "Zendesk", "SQL Server"],
     },
     {
-      id: "3",
+      id: "5",
       company: "BP4 | Galicia Bank Client",
       position: "Fullstack Developer",
       period: "Enero 2022 - Febrero 2023",
@@ -91,14 +121,17 @@ function App() {
         "Swagger",
       ],
     },
+  ];
+
+
+  const certifications: Certification[] = [
     {
-      id: "4",
-      company: "Novared",
-      position: "Cyber Security Analyst",
-      period: "Enero 2021 - Diciembre 2021",
-      description:
-        "Desarrollé scripts en JavaScript y Python para automatizar tareas de seguridad y análisis de vulnerabilidades. Brindé soporte técnico a usuarios internos dentro de la empresa",
-      technologies: ["JavaScript", "Python", "CyberArk"],
+      id: "1",
+      name: "AWS Certified Cloud Practitioner",
+      issuer: "AWS",
+      date: "Febrero 2025",
+      url: "https://www.credly.com/badges/48bf25e0-250e-4945-a689-ebb3550ddcde/linked_in?t=ss00bq",
+      important: true,
     },
   ];
 
@@ -112,17 +145,6 @@ function App() {
       description:
         "Carrera orientada al análisis, diseño y desarrollo de soluciones informáticas integrales, con una sólida base en software, hardware y telecomunicaciones.",
       coursework: [],
-    },
-  ];
-
-  const certifications: Certification[] = [
-    {
-      id: "1",
-      name: "AWS Certified Cloud Practitioner",
-      issuer: "AWS",
-      date: "Febrero 2025",
-      url: "https://www.credly.com/badges/48bf25e0-250e-4945-a689-ebb3550ddcde/linked_in?t=ss00bq",
-      important: true,
     },
   ];
 
