@@ -64,22 +64,6 @@ function App() {
     },
     {
       id: "2",
-      company: "IDECBA",
-      position: "Fullstack developer",
-      period: "Mayo 2025 - Dic 2025",
-      current: false,
-      description:
-        "Desarrollo y cierre de sitios web con stack MERN. Gestión de pipelines CI/CD y automatización de procesos de despliegue.",
-      technologies: [
-        "React",
-        "JavaScript",
-        "Node",
-        "PostgreSQL",
-        "Microsoft SQL Server",
-      ],
-    },
-    {
-      id: "3",
       company: "CFOTECH | Red Link Client",
       position: "Infrastructure Analyst",
       period: "Octubre 2023 - Mayo 2025",
@@ -95,7 +79,7 @@ function App() {
       ],
     },
     {
-      id: "4",
+      id: "3",
       company: "Sisorg",
       position: "DevOps Engineer",
       period: "Enero 2023 - Octubre 2023",
@@ -104,7 +88,7 @@ function App() {
       technologies: ["AWS", "CI/CD", "Azure DevOps", "Zendesk", "SQL Server"],
     },
     {
-      id: "5",
+      id: "4",
       company: "BP4 | Galicia Bank Client",
       position: "Fullstack Developer",
       period: "Enero 2022 - Febrero 2023",
