@@ -47,6 +47,9 @@ export interface Certification {
   date: string;
   url?: string;
   important?: boolean;
+  badgeImage?: string;
+  level?: string;
+  description?: string;
 }
 
 export interface Course {

@@ -1,36 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   font-weight: 400;
 
-  /* Tema oscuro profesional - Inspirado en los mejores portfolios */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #111111;
-  --bg-tertiary: #1a1a1a;
-  --bg-card: #151515;
-  --bg-hover: #202020;
-  
-  /* Colores de acento */
-  --accent-primary: #00d4ff;
-  --accent-secondary: #0099cc;
-  --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-  
-  /* Texto */
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0e0;
-  --text-muted: #a0a0a0;
-  --text-dim: #666666;
-  
-  /* Bordes y sombras */
-  --border-color: #2a2a2a;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-  --shadow-accent: 0 0 20px rgba(0, 212, 255, 0.3);
-  
-  /* Gradientes */
-  --gradient-primary: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-  --gradient-card: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-tertiary) 100%);
+  /* ── Dark Navy Premium Palette ── */
+  --bg-primary:    #070b14;
+  --bg-secondary:  #0b1120;
+  --bg-tertiary:   #0f1729;
+  --bg-card:       #111c33;
+  --bg-hover:      #162040;
+
+  /* ── Accent – electric cyan / indigo ── */
+  --accent-primary:   #38bdf8;
+  --accent-secondary: #818cf8;
+  --accent-glow:      #38bdf8;
+  --accent-gradient:  linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  --accent-gradient-warm: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+
+  /* ── Text ── */
+  --text-primary:   #f0f6ff;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+  --text-dim:       #334155;
+
+  /* ── Borders & shadows ── */
+  --border-color:  rgba(56, 189, 248, 0.08);
+  --border-bright: rgba(56, 189, 248, 0.22);
+
+  --shadow-sm:     0 2px 8px rgba(0,0,0,0.4);
+  --shadow-md:     0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg:     0 8px 40px rgba(0,0,0,0.65);
+  --shadow-accent: 0 0 24px rgba(56, 189, 248, 0.22);
+  --shadow-glow:   0 0 48px rgba(56, 189, 248, 0.12);
+
+  /* ── Gradients ── */
+  --gradient-hero: radial-gradient(ellipse at 60% 0%, rgba(56,189,248,0.10) 0%, transparent 55%),
+                   radial-gradient(ellipse at 10% 80%, rgba(129,140,248,0.08) 0%, transparent 45%),
+                   #070b14;
+  --bg-gradient:   var(--bg-primary);
 
   color-scheme: dark;
   color: var(--text-primary);
@@ -54,45 +63,20 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background: var(--bg-primary);
-  /* Patrón sutil de dots para profundidad */
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
-  background-size: 200px 200px, 300px 300px;
-  background-attachment: fixed;
 }
 
 #root {
   width: 100%;
-  background: transparent;
 }
 
-/* Scrollbar personalizado */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-}
-
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-primary);
-  border-radius: 4px;
+  background: linear-gradient(180deg, #38bdf8, #818cf8);
+  border-radius: 3px;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-secondary);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--text-primary);
-    background-color: var(--bg-primary);
-  }
-}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-primary); }

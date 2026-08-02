@@ -50,9 +50,24 @@ function App() {
   const experiences: ExperienceType[] = [
     {
       id: "1",
+      company: "EPIDATA",
+      position: "DevOps Engineer",
+      period: "Julio 2026 - Actualidad",
+      current: true,
+      description:
+        "Implementacion y mantenimiento de procesos de compilacion y despliegue CICD en Azure Devops",
+      technologies: [
+        "Azure devops CICD",
+        "Azure cloud",
+        "Gitlab",
+        ".NET"
+      ],
+    },
+    {
+      id: "2",
       company: "AVALITH | Santillana client",
       position: "DevOps Engineer",
-      period: "Diciembre 2025 - Actualidad",
+      period: "Diciembre 2025 - Julio 2026",
       current: false,
       description:
         "Trabajo sobre infraestructura cloud en AWS para cuentas de clientes internacionales de Santillana, gestionando servicios como IAM, S3, EC2, CloudFront, ECS, EKS y RDS. Resuelvo tickets de infraestructura garantizando la continuidad operativa de los entornos productivos. Ejecuto ventanas de mantenimiento nocturno (3am–7am) que incluyen despliegues, actualizaciones y resolución de incidentes en tiempo real. Genero reportes diarios de estado para los clientes sobre las actividades y cambios realizados durante la guardia.",
@@ -63,7 +78,7 @@ function App() {
       ],
     },
     {
-      id: "2",
+      id: "3",
       company: "CFOTECH | Red Link Client",
       position: "Infrastructure Analyst",
       period: "Octubre 2023 - Mayo 2025",
@@ -79,7 +94,7 @@ function App() {
       ],
     },
     {
-      id: "3",
+      id: "4",
       company: "Sisorg",
       position: "DevOps Engineer",
       period: "Enero 2023 - Octubre 2023",
@@ -88,7 +103,7 @@ function App() {
       technologies: ["AWS", "CI/CD", "Azure DevOps", "Zendesk", "SQL Server"],
     },
     {
-      id: "4",
+      id: "5",
       company: "BP4 | Galicia Bank Client",
       position: "Fullstack Developer",
       period: "Enero 2022 - Febrero 2023",
@@ -104,18 +119,32 @@ function App() {
         "Jenkins",
         "Swagger",
       ],
-    },
+    }
   ];
 
 
   const certifications: Certification[] = [
     {
       id: "1",
+      name: "AWS Certified Solutions Architect",
+      issuer: "AWS",
+      date: "Julio 2026",
+      url: "https://www.credly.com/badges/22499178-c936-4687-b10b-3d88a43ec3eb/public_url",
+      important: true,
+      badgeImage: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+      level: "ASSOCIATE",
+      description: "Valida el diseño de arquitecturas en AWS que sean seguras, resilientes, eficientes en costos y de alto rendimiento.",
+    },
+    {
+      id: "2",
       name: "AWS Certified Cloud Practitioner",
       issuer: "AWS",
       date: "Febrero 2025",
       url: "https://www.credly.com/badges/48bf25e0-250e-4945-a689-ebb3550ddcde/linked_in?t=ss00bq",
-      important: true,
+      important: false,
+      badgeImage: "https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
+      level: "FOUNDATIONAL",
+      description: "Demuestra comprensión fundamental de los servicios AWS y sus usos en la nube.",
     },
   ];
 

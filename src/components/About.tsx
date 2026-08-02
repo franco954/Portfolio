@@ -20,7 +20,7 @@ const About: React.FC<AboutProps> = ({ about, skills, cvOnline, location }) => {
       <div className="container">
         <h2 className="section-title">Sobre mí</h2>
         <div className="about-content">
-          <div className="about-text">
+          <div className="about-text-card">
             <p>{about}</p>
             <div className="location-info">
               <span className="location-icon">📍</span>

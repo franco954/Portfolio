@@ -9,7 +9,6 @@ body {
   line-height: 1.6;
   color: var(--text-primary);
   background: var(--bg-primary);
-  font-feature-settings: 'kern' 1, 'liga' 1;
 }
 
 .app {
@@ -18,58 +17,74 @@ body {
   background: var(--bg-primary);
 }
 
-/* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
 }
 
-/* Global button reset */
 button {
   font-family: inherit;
   border: none;
   cursor: pointer;
 }
 
-/* Container utility class */
+/* ── Container ── */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* Section spacing */
 section {
   scroll-margin-top: 80px;
   position: relative;
 }
 
-/* Animaciones suaves para interacciones */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease-out forwards;
+/* ── Shared section header ── */
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  position: relative;
 }
 
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 3px;
+  background: var(--accent-gradient);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+}
+
+/* ── Utility ── */
 @keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Efectos de hover universales */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.75; transform: scale(1.04); }
 }
 
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Separadores de sección */
-.section-divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
-  margin: 4rem 0;
+@keyframes shimmer {
+  0%   { left: -100%; }
+  100% { left: 100%; }
 }
